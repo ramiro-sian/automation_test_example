@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.2 on win32)" generated="20240209 05:33:13.842" rpa="false" schemaversion="4">
+<suite id="s1" name="Automation Test Example" source="D:\Documents\nozzmo\automation_test_example">
+<suite id="s1-s1" name="Website" source="D:\Documents\nozzmo\automation_test_example\website">
+<suite id="s1-s1-s1" name="Recruitment" source="D:\Documents\nozzmo\automation_test_example\website\recruitment.robot">
+<test id="s1-s1-s1-t1" name="[TST01] - Positive Test Validate Contact Us Form - Happy Path" line="14">
+<kw name="Given Webapp URL and Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Log Variables" library="BuiltIn">
+<doc>Logs all variables in the current scope with given log level.</doc>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${/} = \</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${:} = ;</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${\n} = 
+</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${BROWSER} = Chrome</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${DEBUG_FILE} = NONE</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${EVIDENCE_IMG} = ../../evidence/website/</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${EXECDIR} = D:\Documents\nozzmo\automation_test_example</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${False} = False</msg>
+<msg timestamp="20240209 05:33:14.177" level="INFO">${HOST} = https://nozzmo.com/recruiting</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${LOG_FILE} = D:\Documents\nozzmo\automation_test_example\results\log.html</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${LOG_LEVEL} = INFO</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${None} = None</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${null} = None</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">&amp;{OPTIONS} = { include=[] | exclude=[] | skip=[] | skip_on_failure=[] }</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${OUTPUT_DIR} = D:\Documents\nozzmo\automation_test_example\results</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${OUTPUT_FILE} = D:\Documents\nozzmo\automation_test_example\results\output.xml</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${PREV_TEST_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${PREV_TEST_NAME} = </msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${PREV_TEST_STATUS} = </msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${REPORT_FILE} = D:\Documents\nozzmo\automation_test_example\results\report.html</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${RESP_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${SPACE} =  </msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${SUITE_DOCUMENTATION} = Test suite for recruiting component from nozzmo-website.</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">&amp;{SUITE_METADATA} = { }</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${SUITE_NAME} = Automation Test Example.Website.Recruitment</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${SUITE_SOURCE} = D:\Documents\nozzmo\automation_test_example\website\recruitment.robot</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${TEMPDIR} = C:\Users\rasb5\AppData\Local\Temp</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${TEST_DOCUMENTATION} = Validation of Contact Us Form sending all valid values</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${TEST_NAME} = [TST01] - Positive Test Validate Contact Us Form - Happy Path</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">@{TEST_TAGS} = [ Positive | Regression ]</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${True} = True</msg>
+<msg timestamp="20240209 05:33:14.178" level="INFO">${webapp_url} = https://nozzmo.com/recruiting</msg>
+<status status="PASS" starttime="20240209 05:33:14.177" endtime="20240209 05:33:14.178"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:14.177" endtime="20240209 05:33:14.178"/>
+</kw>
+<kw name="When Open URL on Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${webapp_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240209 05:33:14.179" level="INFO">Opening browser 'Chrome' to base url 'https://nozzmo.com/recruiting'.</msg>
+<status status="PASS" starttime="20240209 05:33:14.178" endtime="20240209 05:33:16.259"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240209 05:33:16.260" endtime="20240209 05:33:16.381"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:16.381" endtime="20240209 05:33:16.399"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:14.178" endtime="20240209 05:33:16.399"/>
+</kw>
+<kw name="And Set Name Using Random Value" library="recruitment">
+<kw name="Get Random Name" library="RecruitmentController">
+<var>${name}</var>
+<msg timestamp="20240209 05:33:16.502" level="INFO">${name} = Tammy Mendoza</msg>
+<status status="PASS" starttime="20240209 05:33:16.400" endtime="20240209 05:33:16.502"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:16.503" level="INFO">Typing text 'Tammy Mendoza' into text field 'xpath=//input[@name='name']'.</msg>
+<status status="PASS" starttime="20240209 05:33:16.502" endtime="20240209 05:33:16.615"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:16.399" endtime="20240209 05:33:16.615"/>
+</kw>
+<kw name="And Set Email Using Random Value" library="recruitment">
+<kw name="Get Random Email" library="RecruitmentController">
+<var>${email}</var>
+<msg timestamp="20240209 05:33:16.699" level="INFO">${email} = fstewart@example.com</msg>
+<status status="PASS" starttime="20240209 05:33:16.616" endtime="20240209 05:33:16.699"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@name='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:16.699" level="INFO">Typing text 'fstewart@example.com' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20240209 05:33:16.699" endtime="20240209 05:33:16.786"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:16.615" endtime="20240209 05:33:16.786"/>
+</kw>
+<kw name="And Set Description Using Random Value" library="recruitment">
+<kw name="Get Random Description" library="RecruitmentController">
+<var>${description}</var>
+<msg timestamp="20240209 05:33:16.843" level="INFO">${description} = Federal toward nothing check consumer. Him very manage important.
+Second notice may green interest approach. Sea personal similar card. International simple name chair.</msg>
+<status status="PASS" starttime="20240209 05:33:16.787" endtime="20240209 05:33:16.843"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//textarea[@name='more']</arg>
+<arg>${description}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:16.843" level="INFO">Typing text 'Federal toward nothing check consumer. Him very manage important.
+Second notice may green interest approach. Sea personal similar card. International simple name chair.' into text field 'xpath=//textarea[@name='more']'.</msg>
+<status status="PASS" starttime="20240209 05:33:16.843" endtime="20240209 05:33:17.118"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:16.786" endtime="20240209 05:33:17.118"/>
+</kw>
+<kw name="And Click Submit Button" library="recruitment">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:17.118" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240209 05:33:17.118" endtime="20240209 05:33:17.181"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:17.450" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-21.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:17.181" endtime="20240209 05:33:17.450"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:17.118" endtime="20240209 05:33:17.451"/>
+</kw>
+<kw name="Then Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240209 05:33:17.451" endtime="20240209 05:33:19.591"/>
+</kw>
+<doc>Validation of Contact Us Form sending all valid values</doc>
+<tag>Positive</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240209 05:33:14.176" endtime="20240209 05:33:19.591"/>
+</test>
+<test id="s1-s1-s1-t2" name="[TST02] - Negative Test Validate Contact Us Form - Send Just Name" line="26">
+<kw name="Set Variable" library="BuiltIn">
+<var>${email_error_message}</var>
+<arg>Email is required</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240209 05:33:19.593" level="INFO">${email_error_message} = Email is required</msg>
+<status status="PASS" starttime="20240209 05:33:19.593" endtime="20240209 05:33:19.593"/>
+</kw>
+<kw name="Given Webapp URL and Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Log Variables" library="BuiltIn">
+<doc>Logs all variables in the current scope with given log level.</doc>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${/} = \</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${:} = ;</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${\n} = 
+</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${BROWSER} = Chrome</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${DEBUG_FILE} = NONE</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${EVIDENCE_IMG} = ../../evidence/website/</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${EXECDIR} = D:\Documents\nozzmo\automation_test_example</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${False} = False</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${HOST} = https://nozzmo.com/recruiting</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${LOG_FILE} = D:\Documents\nozzmo\automation_test_example\results\log.html</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${LOG_LEVEL} = INFO</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${None} = None</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${null} = None</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">&amp;{OPTIONS} = { include=[] | exclude=[] | skip=[] | skip_on_failure=[] }</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${OUTPUT_DIR} = D:\Documents\nozzmo\automation_test_example\results</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${OUTPUT_FILE} = D:\Documents\nozzmo\automation_test_example\results\output.xml</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${PREV_TEST_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${PREV_TEST_NAME} = [TST01] - Positive Test Validate Contact Us Form - Happy Path</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${PREV_TEST_STATUS} = PASS</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${REPORT_FILE} = D:\Documents\nozzmo\automation_test_example\results\report.html</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${RESP_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${SPACE} =  </msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${SUITE_DOCUMENTATION} = Test suite for recruiting component from nozzmo-website.</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">&amp;{SUITE_METADATA} = { }</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${SUITE_NAME} = Automation Test Example.Website.Recruitment</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${SUITE_SOURCE} = D:\Documents\nozzmo\automation_test_example\website\recruitment.robot</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${TEMPDIR} = C:\Users\rasb5\AppData\Local\Temp</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${TEST_DOCUMENTATION} = Validation of Contact Us Form sending just name value and leave other fields empty</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${TEST_NAME} = [TST02] - Negative Test Validate Contact Us Form - Send Just Name</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">@{TEST_TAGS} = [ Negative | Regression ]</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${True} = True</msg>
+<msg timestamp="20240209 05:33:19.594" level="INFO">${webapp_url} = https://nozzmo.com/recruiting</msg>
+<status status="PASS" starttime="20240209 05:33:19.594" endtime="20240209 05:33:19.594"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:19.593" endtime="20240209 05:33:19.595"/>
+</kw>
+<kw name="When Open URL on Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${webapp_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240209 05:33:19.595" level="INFO">Opening browser 'Chrome' to base url 'https://nozzmo.com/recruiting'.</msg>
+<status status="PASS" starttime="20240209 05:33:19.595" endtime="20240209 05:33:21.590"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240209 05:33:21.591" endtime="20240209 05:33:21.712"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:21.712" endtime="20240209 05:33:21.730"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:19.595" endtime="20240209 05:33:21.730"/>
+</kw>
+<kw name="And Set Name Using Random Value" library="recruitment">
+<kw name="Get Random Name" library="RecruitmentController">
+<var>${name}</var>
+<msg timestamp="20240209 05:33:21.817" level="INFO">${name} = Dawn Thomas</msg>
+<status status="PASS" starttime="20240209 05:33:21.731" endtime="20240209 05:33:21.817"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:21.819" level="INFO">Typing text 'Dawn Thomas' into text field 'xpath=//input[@name='name']'.</msg>
+<status status="PASS" starttime="20240209 05:33:21.817" endtime="20240209 05:33:21.936"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:21.730" endtime="20240209 05:33:21.936"/>
+</kw>
+<kw name="And Click Submit Button" library="recruitment">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:21.937" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240209 05:33:21.937" endtime="20240209 05:33:22.039"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:22.308" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-22.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:22.039" endtime="20240209 05:33:22.308"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:21.936" endtime="20240209 05:33:22.308"/>
+</kw>
+<kw name="Then Get Response Message" library="recruitment">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:22.309" endtime="20240209 05:33:22.321"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${message_resp}</var>
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:22.341" level="INFO">${message_resp} = Email is required</msg>
+<status status="PASS" starttime="20240209 05:33:22.321" endtime="20240209 05:33:22.341"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${message_resp}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240209 05:33:22.342" level="INFO">${RESP_MESSAGE} = Email is required</msg>
+<status status="PASS" starttime="20240209 05:33:22.342" endtime="20240209 05:33:22.342"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:22.583" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-23.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:22.342" endtime="20240209 05:33:22.583"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240209 05:33:22.584" endtime="20240209 05:33:24.709"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:22.309" endtime="20240209 05:33:24.709"/>
+</kw>
+<kw name="And Should Be Equal As Strings" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${email_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240209 05:33:24.709" endtime="20240209 05:33:24.710"/>
+</kw>
+<doc>Validation of Contact Us Form sending just name value and leave other fields empty</doc>
+<tag>Negative</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240209 05:33:19.592" endtime="20240209 05:33:24.710"/>
+</test>
+<test id="s1-s1-s1-t3" name="[TST03] - Negative Test Validate Contact Us Form - Send Just Email" line="37">
+<kw name="Set Variable" library="BuiltIn">
+<var>${name_error_message}</var>
+<arg>Name is required</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240209 05:33:24.712" level="INFO">${name_error_message} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:24.712" endtime="20240209 05:33:24.712"/>
+</kw>
+<kw name="Given Webapp URL and Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Log Variables" library="BuiltIn">
+<doc>Logs all variables in the current scope with given log level.</doc>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${/} = \</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${:} = ;</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${\n} = 
+</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${BROWSER} = Chrome</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${DEBUG_FILE} = NONE</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${EVIDENCE_IMG} = ../../evidence/website/</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${EXECDIR} = D:\Documents\nozzmo\automation_test_example</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${False} = False</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${HOST} = https://nozzmo.com/recruiting</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${LOG_FILE} = D:\Documents\nozzmo\automation_test_example\results\log.html</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${LOG_LEVEL} = INFO</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${None} = None</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${null} = None</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">&amp;{OPTIONS} = { include=[] | exclude=[] | skip=[] | skip_on_failure=[] }</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${OUTPUT_DIR} = D:\Documents\nozzmo\automation_test_example\results</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${OUTPUT_FILE} = D:\Documents\nozzmo\automation_test_example\results\output.xml</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${PREV_TEST_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${PREV_TEST_NAME} = [TST02] - Negative Test Validate Contact Us Form - Send Just Name</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${PREV_TEST_STATUS} = PASS</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${REPORT_FILE} = D:\Documents\nozzmo\automation_test_example\results\report.html</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${RESP_MESSAGE} = Email is required</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${SPACE} =  </msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${SUITE_DOCUMENTATION} = Test suite for recruiting component from nozzmo-website.</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">&amp;{SUITE_METADATA} = { }</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${SUITE_NAME} = Automation Test Example.Website.Recruitment</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${SUITE_SOURCE} = D:\Documents\nozzmo\automation_test_example\website\recruitment.robot</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${TEMPDIR} = C:\Users\rasb5\AppData\Local\Temp</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${TEST_DOCUMENTATION} = Validation of Contact Us Form sending just email value and leave other fields empty</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${TEST_NAME} = [TST03] - Negative Test Validate Contact Us Form - Send Just Email</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">@{TEST_TAGS} = [ Negative | Regression ]</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${True} = True</msg>
+<msg timestamp="20240209 05:33:24.713" level="INFO">${webapp_url} = https://nozzmo.com/recruiting</msg>
+<status status="PASS" starttime="20240209 05:33:24.712" endtime="20240209 05:33:24.713"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:24.712" endtime="20240209 05:33:24.713"/>
+</kw>
+<kw name="When Open URL on Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${webapp_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240209 05:33:24.714" level="INFO">Opening browser 'Chrome' to base url 'https://nozzmo.com/recruiting'.</msg>
+<status status="PASS" starttime="20240209 05:33:24.714" endtime="20240209 05:33:26.700"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240209 05:33:26.700" endtime="20240209 05:33:26.823"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:26.823" endtime="20240209 05:33:26.842"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:24.713" endtime="20240209 05:33:26.842"/>
+</kw>
+<kw name="And Set Email Using Random Value" library="recruitment">
+<kw name="Get Random Email" library="RecruitmentController">
+<var>${email}</var>
+<msg timestamp="20240209 05:33:26.928" level="INFO">${email} = christina48@example.net</msg>
+<status status="PASS" starttime="20240209 05:33:26.843" endtime="20240209 05:33:26.928"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@name='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:26.929" level="INFO">Typing text 'christina48@example.net' into text field 'xpath=//input[@name='email']'.</msg>
+<status status="PASS" starttime="20240209 05:33:26.928" endtime="20240209 05:33:27.103"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:26.843" endtime="20240209 05:33:27.104"/>
+</kw>
+<kw name="And Click Submit Button" library="recruitment">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:27.104" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240209 05:33:27.104" endtime="20240209 05:33:27.205"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:27.554" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-24.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:27.206" endtime="20240209 05:33:27.555"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:27.104" endtime="20240209 05:33:27.555"/>
+</kw>
+<kw name="Then Get Response Message" library="recruitment">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:27.555" endtime="20240209 05:33:27.565"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${message_resp}</var>
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:27.581" level="INFO">${message_resp} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:27.565" endtime="20240209 05:33:27.581"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${message_resp}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240209 05:33:27.582" level="INFO">${RESP_MESSAGE} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:27.581" endtime="20240209 05:33:27.582"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:27.830" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-25.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:27.582" endtime="20240209 05:33:27.830"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240209 05:33:27.830" endtime="20240209 05:33:29.948"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:27.555" endtime="20240209 05:33:29.948"/>
+</kw>
+<kw name="And Should Be Equal As Strings" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${name_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240209 05:33:29.948" endtime="20240209 05:33:29.949"/>
+</kw>
+<doc>Validation of Contact Us Form sending just email value and leave other fields empty</doc>
+<tag>Negative</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240209 05:33:24.711" endtime="20240209 05:33:29.949"/>
+</test>
+<test id="s1-s1-s1-t4" name="[TST04] - Negative Test Validate Contact Us Form - Send Just Description" line="50">
+<kw name="Set Variable" library="BuiltIn">
+<var>${name_error_message}</var>
+<arg>Name is required</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240209 05:33:29.951" level="INFO">${name_error_message} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:29.951" endtime="20240209 05:33:29.951"/>
+</kw>
+<kw name="Given Webapp URL and Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Log Variables" library="BuiltIn">
+<doc>Logs all variables in the current scope with given log level.</doc>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${/} = \</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${:} = ;</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${\n} = 
+</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${BROWSER} = Chrome</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${DEBUG_FILE} = NONE</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${EVIDENCE_IMG} = ../../evidence/website/</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${EXECDIR} = D:\Documents\nozzmo\automation_test_example</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${False} = False</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${HOST} = https://nozzmo.com/recruiting</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${LOG_FILE} = D:\Documents\nozzmo\automation_test_example\results\log.html</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${LOG_LEVEL} = INFO</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${None} = None</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${null} = None</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">&amp;{OPTIONS} = { include=[] | exclude=[] | skip=[] | skip_on_failure=[] }</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${OUTPUT_DIR} = D:\Documents\nozzmo\automation_test_example\results</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${OUTPUT_FILE} = D:\Documents\nozzmo\automation_test_example\results\output.xml</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${PREV_TEST_MESSAGE} = </msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${PREV_TEST_NAME} = [TST03] - Negative Test Validate Contact Us Form - Send Just Email</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${PREV_TEST_STATUS} = PASS</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${REPORT_FILE} = D:\Documents\nozzmo\automation_test_example\results\report.html</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${RESP_MESSAGE} = Name is required</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${SPACE} =  </msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${SUITE_DOCUMENTATION} = Test suite for recruiting component from nozzmo-website.</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">&amp;{SUITE_METADATA} = { }</msg>
+<msg timestamp="20240209 05:33:29.952" level="INFO">${SUITE_NAME} = Automation Test Example.Website.Recruitment</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${SUITE_SOURCE} = D:\Documents\nozzmo\automation_test_example\website\recruitment.robot</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${TEMPDIR} = C:\Users\rasb5\AppData\Local\Temp</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${TEST_DOCUMENTATION} = Validation of Contact Us Form sending just description value and leave other fields empty</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${TEST_NAME} = [TST04] - Negative Test Validate Contact Us Form - Send Just Description</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">@{TEST_TAGS} = [ Negative | Regression ]</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${True} = True</msg>
+<msg timestamp="20240209 05:33:29.953" level="INFO">${webapp_url} = https://nozzmo.com/recruiting</msg>
+<status status="PASS" starttime="20240209 05:33:29.952" endtime="20240209 05:33:29.953"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:29.951" endtime="20240209 05:33:29.953"/>
+</kw>
+<kw name="When Open URL on Browser" library="recruitment">
+<arg>${HOST}</arg>
+<arg>${BROWSER}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${webapp_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240209 05:33:29.954" level="INFO">Opening browser 'Chrome' to base url 'https://nozzmo.com/recruiting'.</msg>
+<status status="PASS" starttime="20240209 05:33:29.954" endtime="20240209 05:33:31.981"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240209 05:33:31.981" endtime="20240209 05:33:32.106"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//input[@name='name']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:32.106" endtime="20240209 05:33:32.121"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:29.953" endtime="20240209 05:33:32.121"/>
+</kw>
+<kw name="And Set Description Using Random Value" library="recruitment">
+<kw name="Get Random Description" library="RecruitmentController">
+<var>${description}</var>
+<msg timestamp="20240209 05:33:32.217" level="INFO">${description} = Their value thank. Hair response billion build move once. Standard institution time fund out expert research.
+Into car add what himself participant. Always summer whatever seat someone.</msg>
+<status status="PASS" starttime="20240209 05:33:32.122" endtime="20240209 05:33:32.217"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//textarea[@name='more']</arg>
+<arg>${description}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:32.217" level="INFO">Typing text 'Their value thank. Hair response billion build move once. Standard institution time fund out expert research.
+Into car add what himself participant. Always summer whatever seat someone.' into text field 'xpath=//textarea[@name='more']'.</msg>
+<status status="PASS" starttime="20240209 05:33:32.217" endtime="20240209 05:33:32.601"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:32.122" endtime="20240209 05:33:32.602"/>
+</kw>
+<kw name="And Click Submit Button" library="recruitment">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:32.602" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240209 05:33:32.602" endtime="20240209 05:33:32.688"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:33.002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-26.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:32.689" endtime="20240209 05:33:33.002"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:32.602" endtime="20240209 05:33:33.002"/>
+</kw>
+<kw name="Then Get Response Message" library="recruitment">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240209 05:33:33.003" endtime="20240209 05:33:33.013"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${message_resp}</var>
+<arg>xpath=//div[@class='animate-appear mt-2 text-red-400 text-sm']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240209 05:33:33.028" level="INFO">${message_resp} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:33.013" endtime="20240209 05:33:33.028"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${message_resp}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240209 05:33:33.028" level="INFO">${RESP_MESSAGE} = Name is required</msg>
+<status status="PASS" starttime="20240209 05:33:33.028" endtime="20240209 05:33:33.028"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>${EVIDENCE_IMG}selenium-screenshot-{index}.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240209 05:33:33.218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../evidence/website/selenium-screenshot-27.png"&gt;&lt;img src="../../evidence/website/selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240209 05:33:33.028" endtime="20240209 05:33:33.219"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240209 05:33:33.219" endtime="20240209 05:33:35.357"/>
+</kw>
+<status status="PASS" starttime="20240209 05:33:33.002" endtime="20240209 05:33:35.357"/>
+</kw>
+<kw name="And Should Be Equal As Strings" library="BuiltIn">
+<arg>${RESP_MESSAGE}</arg>
+<arg>${name_error_message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240209 05:33:35.357" endtime="20240209 05:33:35.358"/>
+</kw>
+<doc>Validation of Contact Us Form sending just description value and leave other fields empty</doc>
+<tag>Negative</tag>
+<tag>Regression</tag>
+<status status="PASS" starttime="20240209 05:33:29.950" endtime="20240209 05:33:35.358"/>
+</test>
+<doc>Test suite for recruiting component from nozzmo-website.</doc>
+<status status="PASS" starttime="20240209 05:33:13.861" endtime="20240209 05:33:35.359"/>
+</suite>
+<status status="PASS" starttime="20240209 05:33:13.859" endtime="20240209 05:33:35.360"/>
+</suite>
+<status status="PASS" starttime="20240209 05:33:13.843" endtime="20240209 05:33:35.361"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">Negative</stat>
+<stat pass="1" fail="0" skip="0">Positive</stat>
+<stat pass="4" fail="0" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Automation Test Example">Automation Test Example</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Website">Automation Test Example.Website</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s1" name="Recruitment">Automation Test Example.Website.Recruitment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
