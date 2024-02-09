@@ -15,6 +15,9 @@ $ pip install -r requirements.txt
 
 Run test 
 ```sh
+# All tests
+robot -d results/ .
+
 $ robot -d --outputdir .   
 $ robot --include  Tags
 $ robot --exclude  Tags 
