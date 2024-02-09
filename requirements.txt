@@ -1,0 +1,3 @@
+robotframework_seleniumlibrary~=6.2.0
+Appium-Python-Client~=3.1.1
+Faker
